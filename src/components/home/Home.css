@@ -1,0 +1,27 @@
+.landingPage
+{
+    height: 80vh;
+    
+}
+/* Container holding the image and the text */
+.homeimage {
+    position: relative;
+    text-align: center;
+    color: white;
+    min-height: 90vh;
+  }
+    
+  .home-col1 {
+    position: relative;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    min-height: 90vh;
+  }
+    
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

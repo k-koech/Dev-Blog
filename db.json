@@ -1,0 +1,54 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "title": "Creating a project in Django",
+      "content": "There are many reasons why you might want to create your personal developer blog. You might want to share your knowledge with your community, build a following, learn more by doing, and even get a better job.Choosing the best blogging platform might be overwhelming when just getting started. You can choose between a WordPress blog or a custom-built site from scratch.Both could be intimidating if you are just getting started or even if you just want to get up and running quickly without having to invest too much time.In this tutorial, I will show you how to get your own blog with a custom domain name within 10 minutes completely for free!",
+      "date_posted": "Wed Aug 03 2022 22:53:24 GMT+0300 (East Africa Time)",
+      "user": "Triple K",
+      "upvotes": 10,
+      "downvotes": 3,
+      "discussion": [
+        {
+          "id": 1,
+          "user": "Kelvin Kipchumba",
+          "date": "Wed Aug 03 2022 21:53:24 GMT+0300 (East Africa Time)",
+          "text": "This is lit bros"
+        },
+        {
+          "id": 2,
+          "user": "Triple K",
+          "date": "Wed Aug 03 2022 21:53:24 GMT+0300 (East Africa Time)",
+          "text": "This is lit bros"
+        }
+      ]
+    },
+    {
+      "title": "pppp",
+      "content": "r5syjmkzd gnsdvfwGRAEB",
+      "user": "kip",
+      "upvotes": 0,
+      "downvotes": 0,
+      "date_posted": "2022-08-04T06:43:23.938Z",
+      "discussion": [
+        {
+          "id": 1,
+          "user": "Kelvin Kipchumba",
+          "date": "Wed Aug 03 2022 21:53:24 GMT+0300 (East Africa Time)",
+          "text": "This is lit bros"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "title": "rest Api",
+      "content": "Now that you've learned the fundamentals of React, it's time to practice and expand your skills by making a React project from scratch!\n\nThis assignment is open-ended when it comes to the actual content. You are free to create whatever you'd like, as long as it incorporates the requirements listed in these instructions.\n\nRequirements\nYou must make a single page application (only one index.html file) using create-react-app\nYour app should use at least 5 components in a way that keeps your code well organized\nThere should be at least 3 client-side routes using react-router",
+      "user": "kelvin",
+      "upvotes": 0,
+      "downvotes": 0,
+      "date_posted": "2022-08-04T07:34:22.211Z",
+      "discussion": [],
+      "id": 4
+    }
+  ]
+}
