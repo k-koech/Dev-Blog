@@ -4,7 +4,7 @@ export default function Blog({post, onDeletePost})
 {
     function deletePost() 
     {
-      fetch(`http://localhost:3007/posts/${post.id}`, {
+      fetch(`https://react-jsonserver.herokuapp.com/posts/${post.id}`, {
         method: "DELETE",
       })
         .then((r) => r.json())
@@ -16,7 +16,7 @@ export default function Blog({post, onDeletePost})
 
     function updatePost() 
     {
-      fetch(`http://localhost:3007/posts/${post.id}`, {
+      fetch(`https://react-jsonserver.herokuapp.com/posts/${post.id}`, {
         method: "PATCH",
       })
         .then((r) => r.json())

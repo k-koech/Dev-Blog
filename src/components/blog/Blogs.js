@@ -7,7 +7,7 @@ export default function Blogs()
     const [posts, setPosts] = useState([]);
 
     useEffect(()=>{
-      fetch("http://localhost:3007/posts")
+      fetch("https://react-jsonserver.herokuapp.com/posts")
       .then((post_response)=> post_response.json() )
       .then((posts)=>{
         console.log("Posts ",posts)
