@@ -13,15 +13,14 @@
 
 ## BDD
     As a user should;
-    - View different photos that interest me.
-    - Click on a single photo to expand it and also view the details of the photo. The photo details must appear on a modal within the same route as the main page.
-    - Search for different categories of photos. (ie. Travel, Food)
-    - Copy a link to the photo to share with my friends.
-    - View photos based on the location they were taken.
+    - View blogs
+    - Create a blog
+    - Delete Blog
+    - View Blogs.
   
     
 ## Live link
-Deployed project can be accessed here [DevBlog](https://djangogallery.herokuapp.com/)   
+Deployed project can be accessed here [DevBlog](https://devblog..com/)   
 
 ## Known Bugs
     The application works perfectly well, no bugs.
@@ -37,5 +36,5 @@ Deployed project can be accessed here [DevBlog](https://djangogallery.herokuapp.
     - phone :: +254725801772
 
 ### License
-*Licenced under the [MT-licence](https://github.com/k-koech/gallery_django/blob/master/LICENSE.md)*
+*Licenced under the [MT-licence](https://github.com/k-koech/Dev-Blog/blob/master/LICENSE.md)*
 Copyright (c) 2021 **Kelvin Kipchumba
