@@ -20,7 +20,7 @@
   
     
 ## Live link
-Deployed project can be accessed here [DevBlog](https://devblog..com/)   
+Deployed project can be accessed here [DevBlog](https://k-koech.github.io/Dev-Blog/)   
 
 ## Known Bugs
     The application works perfectly well, no bugs.
