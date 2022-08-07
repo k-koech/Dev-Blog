@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
+import "./Blogs.css";
 import AddPost from "./AddPost";
 import Blog from "./Blog";
+import ReactLoading from 'react-loading';
 
 export default function Blogs()
 {
@@ -36,15 +38,17 @@ export default function Blogs()
         }
 
     return (
-        <div className="px-5 pt-4">
-           {isLoaded==false?<h3>Loading...</h3>:""}
-
-            <h1>Blogs</h1>
+        <div className="px-5 pt-4  ">
+          <h1>Blogs</h1>            
             <div className="text-right mb-2">
                 <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                   Create Post
                 </button>
             </div>
+            {isLoaded==false?<div className="loader d-flex justify-content-center align-items-center">
+            <ReactLoading type="spin" color="black"  />
+            {/* height={667} width={375 */}
+           </div>:""}
             
             {
                 posts.map((post)=>(
