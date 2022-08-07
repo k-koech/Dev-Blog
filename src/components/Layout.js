@@ -7,7 +7,7 @@ export default function Layout()
   return (
     <>
     <div className="container app-container">
-        <nav className="navbar navbar-expand-lg navbar-light bg-light px-5 pt-4 pb-3">
+        <nav className="navbar navbar-expand-lg navbar-light bg-transparent px-5 pt-4 pb-3">
             <a className="navbar-brand font-weight-bolder" href="/">
                 <span className="h1"><span className="text-danger">Dev</span>Kenya</span>
             </a>

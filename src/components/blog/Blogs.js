@@ -5,6 +5,7 @@ import Blog from "./Blog";
 export default function Blogs()
 {
     const [posts, setPosts] = useState([]);
+    const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(()=>{
       fetch("https://react-jsonserver.herokuapp.com/posts")
@@ -12,6 +13,8 @@ export default function Blogs()
       .then((posts)=>{
         console.log("Posts ",posts)
         setPosts(posts)
+        setIsLoaded(true)
+
       })
      },[]);
   
@@ -22,6 +25,10 @@ export default function Blogs()
         setPosts([...posts, newPost])
         console.log("Posts:", newPost);
       }
+    function handleUpdatePost(updatedPost) 
+      {
+        console.log("UPDATED POSTS")
+      }
     function handleDeletePost(deletedPost) 
         {
             const updatedPost = posts.filter((post) => post.id !== deletedPost.id);
@@ -30,6 +37,8 @@ export default function Blogs()
 
     return (
         <div className="px-5 pt-4">
+           {isLoaded==false?<h3>Loading...</h3>:""}
+
             <h1>Blogs</h1>
             <div className="text-right mb-2">
                 <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -39,7 +48,7 @@ export default function Blogs()
             
             {
                 posts.map((post)=>(
-                    <Blog key={post.id} post={post} onDeletePost={handleDeletePost} />
+                    <Blog key={post.id} post={post} onUpdatePost={handleUpdatePost} onDeletePost={handleDeletePost} />
                 ))
             }
 

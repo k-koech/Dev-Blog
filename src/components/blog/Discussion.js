@@ -2,11 +2,10 @@ export default function Discussion({discussion})
 {
 
   return (
-    <>
-    {/* <h6>{discussion.id}</h6> */}
-    <p className="card">{discussion.text}</p>
-    <p>Discussion User {discussion.user}</p>
-    </>
+    <div className="card p-4 mb-2">
+      <p>{discussion.text}</p>
+      <p className="text-right">{discussion.user}</p>
+    </div>
   )
 
 }
