@@ -5,7 +5,7 @@ import EditPost from "./EditPost";
 
 export default function Blog({post,onUpdatePost,onDeletePost}) 
 {
-  const [upvotes, setUpvotes] = useState(0);
+  const [upvotes, setUpvotes] = useState(7);
   const [downvotes, setDownvotes] = useState(0);
 
   function handleUpvotes()

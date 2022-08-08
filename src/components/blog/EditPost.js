@@ -52,7 +52,7 @@ export default function AddPost({onUpdatePost, post})
                     </div>
                     <div className="form-group">
                         <label>Author</label>
-                        <input type="text" disabled defaultValue={post.user} onChange={(e)=>setUser(e.target.value)} className="form-control" />
+                        <input type="text" defaultValue={post.user} onChange={(e)=>setUser(e.target.value)} className="form-control" />
                         {/* <small className="form-text text-muted">We'll never share your email with anyone else.</small> */}
                     </div>
                     <div className="form-group">
