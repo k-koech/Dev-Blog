@@ -47,17 +47,17 @@ export default function AddPost({onUpdatePost, post})
                 <form onSubmit={handlePostSubmit}>
                     <div className="form-group">
                         <label>Title</label>
-                        <input type="text" value={post.title} onChange={(e)=>setTitle(e.target.value)} className="form-control" />
-                        <small className="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <input type="text" defaultValue={post.title} onChange={(e)=>setTitle(e.target.value)} className="form-control" />
+                        {/* <small className="form-text text-muted">We'll never share your email with anyone else.</small> */}
                     </div>
                     <div className="form-group">
                         <label>Author</label>
-                        <input type="text" disabled value={post.user} onChange={(e)=>setUser(e.target.value)} className="form-control" />
-                        <small className="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <input type="text" disabled defaultValue={post.user} onChange={(e)=>setUser(e.target.value)} className="form-control" />
+                        {/* <small className="form-text text-muted">We'll never share your email with anyone else.</small> */}
                     </div>
                     <div className="form-group">
                         <label >Content</label>
-                        <textarea className="form-control" value={post.content} onChange={(e)=>setContent(e.target.value)} rows="5"></textarea>
+                        <textarea className="form-control" defaultValue={post.content} onChange={(e)=>setContent(e.target.value)} rows="5"></textarea>
                     </div>
                     
                     <button type="submit" className="btn btn-primary">Update</button>

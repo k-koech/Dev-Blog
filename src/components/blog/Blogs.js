@@ -29,6 +29,8 @@ export default function Blogs()
       }
     function handleUpdatePost(updatedPost) 
       {
+        // const updatedPosts = posts.filter((post) => post.id === updatedPost.id);
+        // setPosts(updatedPosts);
         console.log("UPDATED POSTS")
       }
     function handleDeletePost(deletedPost) 
@@ -49,7 +51,6 @@ export default function Blogs()
             <ReactLoading type="spin" color="black"  />
             {/* height={667} width={375 */}
            </div>:""}
-            
             {
                 posts.map((post)=>(
                     <Blog key={post.id} post={post} onUpdatePost={handleUpdatePost} onDeletePost={handleDeletePost} />
