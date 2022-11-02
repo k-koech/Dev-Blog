@@ -16,7 +16,8 @@
     - View blogs
     - Create a blog
     - Delete Blog
-    - View Blogs.
+    - Update Blog
+    - Upvote and downvote Blogs.
   
     
 ## Live link
